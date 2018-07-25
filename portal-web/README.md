@@ -4,6 +4,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Go to  project folder ../XXXXX/portal-web
 
+run below command to install node modules. This is one time step or dependency is added
+$npm install
+
+
 ## Development server
 
 
