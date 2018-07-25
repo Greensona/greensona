@@ -34,5 +34,8 @@ public class ApplicationUser implements Serializable {
     private String password;
     @Transient
     private String token;
+    
+    protected String email;
+    
 
 }
