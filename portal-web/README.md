@@ -34,3 +34,40 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Build Docker image
+Go to  project folder ../portal-web
+$docker build -t portal-web .
+
+#### Create container
+$docker run -it -p 80:80 portal-web
+
+#### Test application
+http://localhost/
+
+#### Troubleshooting
+* Not seeing changes.
+
+Steps 1: Clean all stopped and running containers
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker kill $(docker ps -q)
+
+Step 2: Clean all images
+docker rmi $(docker images -q)
+
+
+### Docker nginx reference documentation
+https://docs.docker.com/samples/library/nginx/
+https://docs.docker.com/samples/library/nginx/#using-environment-variables-in-nginx-configuration
+https://github.com/nginxinc/NGINX-Demos/tree/master/nginx-hello
+
+
+
+ 
+
+
+
+
+
