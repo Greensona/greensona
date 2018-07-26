@@ -16,5 +16,3 @@
  - run mvn docker:build to create image
  - cd ..
  - run "docker up" (this will build web and add the app container too)
- 
- 
