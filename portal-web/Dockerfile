@@ -1,4 +1,3 @@
-FROM nginx:mainline-alpine
-RUN rm /etc/nginx/conf.d/*
-ADD hello.conf /etc/nginx/conf.d/
-ADD index.html /usr/share/nginx/html/
+FROM nginx:1.13.3-alpine
+EXPOSE 80
+COPY dist /usr/share/nginx/html
