@@ -1,2 +1,2 @@
-FROM nginx
-EXPOSE 80
+FROM nginx:mainline-alpine
+
