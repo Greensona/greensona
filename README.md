@@ -15,15 +15,17 @@
 
 ## Build app docker image
  - "cd portal-app"
+ - "mvn clean install"
  - run "mvn docker:build" to create image
 
  ## Build web docker image
  - cd ..
  - "cd portal-web"
+ - "ng build --prod --base-href /portal-web"
  - "docker build . -t portal/portal-web:latest"
  
  ## Run Docker compose
  
- - run "docker-compose up" 
+ - "docker-compose up" 
  - navigate to "http://localhost:81/portal-web/index.html"
  
