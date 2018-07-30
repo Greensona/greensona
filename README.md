@@ -12,7 +12,17 @@
  - run "mvn clean install" this will generate portal-jar file in the targer folder.
 
 ### how to run on docker
- - cd portal-app
- - run mvn docker:build to create image
+
+Build app docker image
+ - "cd portal-app"
+ - run "mvn docker:build" to create image
+
+Build web docker image
  - cd ..
- - run "docker up" (this will build web and add the app container too)
+ - "cd portal-web"
+ - "docker build . -t portal/portal-web:latest"
+ Run Docker compose
+ 
+ - run "docker-compose up" 
+ - navigate to "http://localhost:81/portal-web/index.html"
+ 
