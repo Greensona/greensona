@@ -1,5 +1,5 @@
 portal-web:
-  build: ./portal-web
+  image: portal/portal-web:latest
   container_name: portal-web
   ports:
   - "81:80"

@@ -2,3 +2,4 @@
 /portal-app/mvnw.cmd
 portal-app/.mvn/wrapper/maven-wrapper.jar
 portal-app/.mvn/wrapper/maven-wrapper.properties
+portal-web/package-lock.json
