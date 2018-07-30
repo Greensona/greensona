@@ -13,15 +13,16 @@
 
 ### how to run on docker
 
-Build app docker image
+## Build app docker image
  - "cd portal-app"
  - run "mvn docker:build" to create image
 
-Build web docker image
+ ## Build web docker image
  - cd ..
  - "cd portal-web"
  - "docker build . -t portal/portal-web:latest"
- Run Docker compose
+ 
+ ## Run Docker compose
  
  - run "docker-compose up" 
  - navigate to "http://localhost:81/portal-web/index.html"
