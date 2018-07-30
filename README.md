@@ -11,7 +11,7 @@
 ### how to build deployable jar file
  - run "mvn clean install" this will generate portal-jar file in the targer folder.
 
-### how to run on docker
+# how to run on docker
 
 ## Build app docker image
  - "cd portal-app"
