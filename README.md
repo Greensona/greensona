@@ -21,7 +21,7 @@
  ## Build web docker image
  - cd ..
  - "cd portal-web"
- - "ng build --prod --base-href /portal-web"
+ - "ng build --prod --base-href portal-web"
  - "docker build . -t portal/portal-web:latest"
  
  ## Run Docker compose
